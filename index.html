@@ -24,6 +24,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles/style.css"/>
+    <link rel="stylesheet" href="styles/desktop1440.css" media="screen and (min-width:1440px)"/>
     <title>Product preview card component</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -39,7 +40,10 @@
   </head>
   <body>
     <div class="product-container">
-      <img src="images/image-product-mobile.jpg" alt="" />
+      <picture>
+        <source media="(min-width:1440px)" srcset="images/image-product-desktop.jpg">
+        <img src="images/image-product-mobile.jpg" alt="" />
+      </picture>
       <div class="product-details">
         <p class="product-details__category">Perfume</p>
         <h2>Gabrielle Essence Eau De Parfum</h2>
